@@ -8,5 +8,8 @@ echo "Set GOPATH enviroment variable"
 
 echo '' >> ~/.profile
 echo '# Golang enviroment variable' >> ~/.profile
-echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
+
 echo 'export GOPATH=$HOME/golang/' >> ~/.profile
+echo 'export GOBIN=$GOPATH/bin' >> ~/.profile
+echo 'export PATH=$PATH:$GOBIN' >> ~/.profile
+
