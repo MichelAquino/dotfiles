@@ -10,6 +10,6 @@ echo '' >> ~/.profile
 echo '# Golang enviroment variable' >> ~/.profile
 
 echo 'export GOPATH=$HOME/golang/' >> ~/.profile
-echo 'export GOBIN=$GOPATH/bin' >> ~/.profile
+echo 'export GOBIN=/usr/local/go/bin' >> ~/.profile
 echo 'export PATH=$PATH:$GOBIN' >> ~/.profile
 
