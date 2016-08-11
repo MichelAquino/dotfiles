@@ -33,3 +33,6 @@ go get -u -v github.com/newhook/go-symbols
 
 echo "Installing golang.org/x/tools/cmd/guru..."
 go get -u -v golang.org/x/tools/cmd/guru
+
+echo "Installing golang.org/x/tools/cmd/goimports..."
+go get -u -v golang.org/x/tools/cmd/goimports
