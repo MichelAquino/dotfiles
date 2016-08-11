@@ -1,4 +1,12 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "go.gopath": "/home/michel/golang"
+    "go.buildOnSave": true,
+    "go.lintOnSave": true,
+    "go.vetOnSave": true,
+    "go.coverOnSave": false,
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.formatOnSave": true,
+    "go.formatTool": "goimports",
+    "go.gopath": "/home/michel/golang",
+    "go.gocodeAutoBuild": false
 }
