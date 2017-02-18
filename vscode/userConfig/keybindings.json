@@ -3,5 +3,13 @@
     { "key": "cmd+. i", "command": "go.import.add" },
     { "key": "cmd+. c", "command": "go.test.coverage" },
     { "key": "cmd+. cmd+t", "command": "go.test.cursor" },
-    { "key": "cmd+. t", "command": "go.test.package" }
+    { "key": "cmd+. t", "command": "go.test.package" },
+    {
+        "key": "cmd+shift+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "cmd+shift+l",
+        "command": "editor.action.transformToLowercase"
+    }
 ]
