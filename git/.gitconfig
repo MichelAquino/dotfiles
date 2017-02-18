@@ -16,3 +16,9 @@
     new = green bold
 [color "status"]
     untracked = cyan
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
