@@ -8,5 +8,6 @@
     "go.formatOnSave": true,
     "go.formatTool": "goimports",
     "go.gopath": "/home/michel/golang",
-    "go.gocodeAutoBuild": false
+    "go.gocodeAutoBuild": false,
+    "editor.minimap.enabled": true
 }
