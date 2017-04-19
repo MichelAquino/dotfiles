@@ -9,5 +9,6 @@
     "go.formatTool": "goimports",
     "go.gopath": "/home/michel/golang",
     "go.gocodeAutoBuild": false,
+    "workbench.iconTheme": "vs-seti",
     "editor.minimap.enabled": true
 }
