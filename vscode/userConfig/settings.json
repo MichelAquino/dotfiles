@@ -4,10 +4,9 @@
     "go.lintOnSave": true,
     "go.vetOnSave": true,
     "go.coverOnSave": false,
-    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.useCodeSnippetsOnFunctionSuggest": false,
     "go.formatOnSave": true,
-    "go.formatTool": "goimports",
-    "go.gopath": "/home/michel/golang",
+    "go.gopath": "/home/michel/go",
     "go.gocodeAutoBuild": false,
     "workbench.iconTheme": "vs-seti",
     "editor.minimap.enabled": true
