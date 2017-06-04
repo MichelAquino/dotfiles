@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/michel/.oh-my-zsh
+export ZSH=/home/michel/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -84,15 +84,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Golang enviroment variable
-export GOPATH=$HOME/golang/
-export GOBIN=/usr/local/go/bin/
-export PATH=$PATH:$GOBIN
-
-# Virtualenv
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/pythonDev
-source /usr/local/bin/virtualenvwrapper.sh
-
 # Projects
-export GO_GITHUB=$GOPATH/src/github.com/michelaquino
+export GITHUB_GO=$GOPATH/src/github.com/michelaquino
