@@ -9,6 +9,9 @@ echo "-------------------------------------"
 echo "Installing applications"
 echo "-------------------------------------"
 
+echo "Installing curl"
+sudo apt-get -y install curl
+
 echo "Installing tmux"
 sudo apt-get -y install tmux 
 
