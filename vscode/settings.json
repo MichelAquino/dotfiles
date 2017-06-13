@@ -9,5 +9,6 @@
     "go.gopath": "/home/michel/go",
     "go.gocodeAutoBuild": false,
     "workbench.iconTheme": "vs-seti",
-    "editor.minimap.enabled": true
+    "editor.minimap.enabled": true,
+    "workbench.welcome.enabled": false    
 }

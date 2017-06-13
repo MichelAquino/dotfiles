@@ -1,0 +1,9 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    { "key": "ctrl+. i", "command": "go.import.add" },
+    { "key": "ctrl+. c", "command": "go.test.coverage" },
+    { "key": "ctrl+. ctrl+t", "command": "go.test.cursor" },
+    { "key": "ctrl+. t", "command": "go.test.package" },
+    { "key": "ctrl+shift+u", "command": "editor.action.transformToUppercase" },
+    { "key": "ctrl+shift+l", "command": "editor.action.transformToLowercase" }
+]

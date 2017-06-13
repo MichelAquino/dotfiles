@@ -18,9 +18,6 @@ sudo apt-get -y install vim
 echo "Installing tmux"
 sudo apt-get -y install tmux 
 
-echo "Installing VS Code"
-sudo apt-get -y install code
-
 echo "Installing zsh"
 sudo apt-get -y install zsh
 
