@@ -36,6 +36,7 @@ mkdir -p $HOME/go/{src,pkg,bin}
 rm -f /tmp/go.tar.gz
 
 source $HOME/.zshrc
+sudo chmod -R 777 /usr/local/go
 
 echo "-------------------------------------"
 echo "Installing Golang development dependencies"
