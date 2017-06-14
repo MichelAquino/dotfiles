@@ -1,1 +1,1 @@
-My dotfiles
+My dotfiles based on Linux Debian
