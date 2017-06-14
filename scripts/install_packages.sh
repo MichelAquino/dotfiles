@@ -6,21 +6,11 @@ echo "----------------"
 sudo apt update && apt -y upgrade
 
 echo "-------------------------------------"
-echo "Installing applications"
+echo "Installing basic applications"
 echo "-------------------------------------"
+apt-get install apt-transport-https git curl vim tmux zsh
 
-echo "Installing git"
-apt-get install git
-
-echo "Installing curl"
-apt-get -y install curl
-
-echo "Installing vim"
-apt-get -y install vim
-
-echo "Installing tmux"
-apt-get -y install tmux 
-
-echo "Installing zsh"
-apt-get -y install zsh
-
+echo "----------------"
+echo "Installing VS Code"
+echo "----------------"
+apt-get -y install code
