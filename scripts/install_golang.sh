@@ -21,7 +21,7 @@ fi
 mkdir "$HOME/go"
 
 echo "Extracting ..."
-tar -C "$HOME" -xzf /tmp/go.tar.gz
+sudo tar -C /usr/local -xzf /tmp/go.tar.gz
 mv "$HOME/go"
 touch "$HOME/.zshrc"
 {
@@ -34,6 +34,8 @@ touch "$HOME/.zshrc"
 
 mkdir -p $HOME/go/{src,pkg,bin}
 rm -f /tmp/go.tar.gz
+
+source $HOME/.zshrc
 
 echo "-------------------------------------"
 echo "Installing Golang development dependencies"
