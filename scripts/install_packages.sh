@@ -8,7 +8,7 @@ sudo apt update && apt -y upgrade
 echo "-------------------------------------"
 echo "Installing basic applications"
 echo "-------------------------------------"
-sudo apt-get install apt-transport-https git curl vim tmux zsh
+sudo apt-get install apt-transport-https git curl vim tmux zsh terminator
 
 echo "----------------"
 echo "Installing VS Code"
