@@ -9,28 +9,18 @@ echo "-------------------------------------"
 echo "Installing applications"
 echo "-------------------------------------"
 
+echo "Installing git"
+apt-get install git
+
 echo "Installing curl"
-sudo apt-get -y install curl
+apt-get -y install curl
 
 echo "Installing vim"
-sudo apt-get -y install vim
+apt-get -y install vim
 
 echo "Installing tmux"
-sudo apt-get -y install tmux 
+apt-get -y install tmux 
 
 echo "Installing zsh"
-sudo apt-get -y install zsh
+apt-get -y install zsh
 
-echo "Installing Docker"
-sudo apt-get install \
-     apt-transport-https \
-     ca-certificates \
-     gnupg2 \
-     software-properties-common \
-     docker-ce
-
-echo "Installing Docker Compose"
-sudo -i
-curl -L https://github.com/docker/compose/releases/download/1.13.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
-exit
