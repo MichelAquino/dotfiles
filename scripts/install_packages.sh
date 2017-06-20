@@ -21,17 +21,23 @@ sudo apt-get install \
     terminator
 
 echo "----------------"
-echo "Add VS Code repository!"
+echo "Installing VS Code"
 echo "----------------"
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
-echo "----------------"
-echo "Installing VS Code"
-echo "----------------"
 sudo apt-get update
 sudo apt-get -y install code
+
+echo "----------------"
+echo "Installing Sublime"
+echo "----------------"
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+
+sudo apt-get update
+sudo apt-get install sublime-text
 
 echo "-------------------------------------"
 echo "Installing oh-my-zsh"
