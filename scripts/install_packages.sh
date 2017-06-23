@@ -8,7 +8,7 @@ sudo apt update && apt -y upgrade
 echo "-------------------------------------"
 echo "Installing basic applications"
 echo "-------------------------------------"
-sudo apt-get install \ 
+sudo apt-get -y install \ 
     apt-transport-https \
     ca-certificates \
     gnupg2 \
@@ -37,7 +37,7 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
 sudo apt-get update
-sudo apt-get install sublime-text
+sudo apt-get -y install sublime-text
 
 echo "-------------------------------------"
 echo "Installing oh-my-zsh"
@@ -64,4 +64,4 @@ echo "----------------"
 echo "Installing Docker"
 echo "----------------"
 sudo apt-get update
-sudo apt-get install docker-ce
+sudo apt-get -y install docker-ce
