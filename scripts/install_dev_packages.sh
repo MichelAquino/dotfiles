@@ -1,12 +1,17 @@
 #!/bin/sh
 
 echo "-------------------------------------"
-echo "Installing WRK"
+echo "Installing WRK - Load Test Tool"
 echo "-------------------------------------"
 git clone https://github.com/wg/wrk.git /tmp/wrk
 cd /tmp/wrk
 make
 sudo cp wrk /usr/local/bin
+
+echo "-------------------------------------"
+echo "Installing HEY - Load Test Tool"
+echo "-------------------------------------"
+go get -u github.com/rakyll/hey
 
 echo "----------------"
 echo "Installing VS Code"
