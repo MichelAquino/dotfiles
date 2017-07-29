@@ -21,4 +21,10 @@ sudo apt-get -y install \
     zsh \
     terminator \
     build-essential \ 
-    libssl-dev
+    libssl-dev \
+    desktop-file-utils \
+    gvfs \
+    gvfs-bin \
+    gvfs-common \
+    gvfs-daemons \
+    gvfs-libs
