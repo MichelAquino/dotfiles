@@ -40,3 +40,8 @@ sudo ln -sf /opt/popcorntime/Popcorn-Time /usr/bin/Popcorn-Time
 
 echo -e '[Desktop Entry]\n Version=1.0\n Name=popcorntime\n Exec=/opt/popcorntime/Popcorn-Time\n Icon=/opt/popcorntime/src/app/images/icon.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/popcorntime.desktop
 sudo chmod +x /usr/share/applications/popcorntime.desktop
+
+echo "----------------"
+echo "Installing Deluge"
+echo "----------------"
+sudo apt-get install -y deluge
