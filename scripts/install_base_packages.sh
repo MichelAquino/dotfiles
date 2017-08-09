@@ -27,4 +27,7 @@ sudo apt-get -y install \
     gvfs-bin \
     gvfs-common \
     gvfs-daemons \
-    gvfs-libs
+    gvfs-libs \
+    debian-keyring \
+    dkms \
+    linux-headers-$(uname -r)

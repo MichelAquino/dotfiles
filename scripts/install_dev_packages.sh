@@ -52,3 +52,13 @@ echo "Installing Docker"
 echo "----------------"
 sudo apt-get update
 sudo apt-get -y install docker-ce
+
+echo "----------------"
+echo "Installing Virtualbox"
+echo "----------------"
+
+sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian stretch contrib" >> /etc/apt/sources.list.d/virtualbox.list'
+sudo wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -
+sudo apt-get update
+sudo apt install -y virtualbox-5.1
+sudo gpasswd -a $USER vboxusers
