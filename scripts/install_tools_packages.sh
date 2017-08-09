@@ -27,7 +27,6 @@ sudo dpkg -i /tmp/slack-desktop-2.6.3-amd64.deb
 echo "----------------"
 echo "Installing Popcorn Time"
 echo "----------------"
-
 sudo rm -Rf /opt/popcorntime
 sudo rm -Rf /usr/bin/Popcorn-Time
 sudo rm -Rf /usr/share/applications/popcorntime.desktop
@@ -45,3 +44,9 @@ echo "----------------"
 echo "Installing Deluge"
 echo "----------------"
 sudo apt-get install -y deluge
+
+echo "----------------"
+echo "Installing Skype"
+echo "----------------"
+wget https://go.skype.com/skypeforlinux-64.deb -P /tmp
+sudo dpkg -i /tmp/skypeforlinux-64.deb 
