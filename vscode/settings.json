@@ -1,5 +1,15 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "workbench.iconTheme": "vs-seti",
+    "workbench.welcome.enabled": false,
+    
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": true,
+
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.hlsearch": true,
+    "vim.overrideCopy": false,
+
     "go.buildOnSave": true,
     "go.lintOnSave": true,
     "go.vetOnSave": true,
@@ -7,8 +17,5 @@
     "go.useCodeSnippetsOnFunctionSuggest": false,
     "go.formatOnSave": true,
     "go.gopath": "/home/michel/go",
-    "go.gocodeAutoBuild": false,
-    "workbench.iconTheme": "vs-seti",
-    "editor.minimap.enabled": true,
-    "workbench.welcome.enabled": false    
+    "go.gocodeAutoBuild": false
 }
