@@ -10,3 +10,4 @@
 /bin/bash scripts/configure_git.sh
 /bin/bash scripts/configure_oh_my_zsh.sh
 /bin/bash scripts/configure_vscode.sh
+/bin/bash scripts/configure_vim.sh
