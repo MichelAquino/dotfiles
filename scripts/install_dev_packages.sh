@@ -62,3 +62,12 @@ sudo wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-
 sudo apt-get update
 sudo apt install -y virtualbox-5.1
 sudo gpasswd -a $USER vboxusers
+
+
+echo "----------------"
+echo "Installing Postman"
+echo "----------------"
+wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
+sudo tar -xzf postman.tar.gz -C /opt
+rm postman.tar.gz
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
