@@ -11,6 +11,7 @@ My dotfiles based on Linux Debian
 - oh-my-zsh
 - Docker
 - Golang environment
+- Postman
 
 
 - Google chrome
