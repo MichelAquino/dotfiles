@@ -1,6 +1,7 @@
 #!/bin/sh
 
 /bin/bash scripts/install_base_packages.sh
+/bin/bash scripts/add_repositories.sh
 /bin/bash scripts/install_golang.sh
 /bin/bash scripts/install_dev_packages.sh
 /bin/bash scripts/install_tools_packages.sh

@@ -13,6 +13,7 @@ echo "Installing HEY - Load Test Tool"
 echo "-------------------------------------"
 go get -u github.com/rakyll/hey
 
+#erro
 echo "----------------"
 echo "Installing VS Code"
 echo "----------------"
@@ -38,33 +39,6 @@ echo "-------------------------------------"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "----------------"
-echo "Add Docker repository"
-echo "----------------"
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/debian \
-   $(lsb_release -cs) \
-   stable"
-
-echo "----------------"
-echo "Installing Docker"
-echo "----------------"
-sudo apt-get update
-sudo apt-get -y install docker-ce
-
-echo "----------------"
-echo "Installing Virtualbox"
-echo "----------------"
-
-sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian stretch contrib" >> /etc/apt/sources.list.d/virtualbox.list'
-sudo wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -
-sudo apt-get update
-sudo apt install -y virtualbox-5.1
-sudo gpasswd -a $USER vboxusers
-
-
-echo "----------------"
 echo "Installing Postman"
 echo "----------------"
 wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz
@@ -76,3 +50,15 @@ echo "----------------"
 echo "jq"
 echo "----------------"
 sudo apt-get -y install jq
+
+echo "----------------"
+echo "Installing Docker"
+echo "----------------"
+sudo apt-get update
+sudo apt-get -y install docker-ce
+
+echo "----------------"
+echo "Installing Virtualbox"
+echo "----------------"
+sudo apt install -y virtualbox
+sudo gpasswd -a $USER vboxusers
