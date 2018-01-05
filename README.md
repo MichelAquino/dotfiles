@@ -1,4 +1,4 @@
-My dotfiles based on Linux Debian
+My dotfiles based on Linux Ubuntu
 
 # Include
 
