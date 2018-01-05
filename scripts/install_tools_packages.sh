@@ -50,3 +50,10 @@ echo "Installing Franz"
 echo "----------------"
 wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.14/franz_5.0.0-beta.14_amd64.deb -O /tmp/franz_5.0.0-beta.14_amd64.deb
 sudo dpkg -i /tmp/franz_5.0.0-beta.14_amd64.deb
+
+echo "----------------"
+echo "Installing Gitter"
+echo "----------------"
+#https://update.gitter.im/linux64/latest
+wget https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb -O /tmp/gitter_3.1.0_amd64.deb
+sudo dpkg -i /tmp/gitter_3.1.0_amd64.deb
