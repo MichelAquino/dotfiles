@@ -44,3 +44,9 @@ echo "Installing Skype"
 echo "----------------"
 wget https://go.skype.com/skypeforlinux-64.deb -P /tmp
 sudo dpkg -i /tmp/skypeforlinux-64.deb 
+
+echo "----------------"
+echo "Installing Franz"
+echo "----------------"
+wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.14/franz_5.0.0-beta.14_amd64.deb -O /tmp/franz_5.0.0-beta.14_amd64.deb
+sudo dpkg -i /tmp/franz_5.0.0-beta.14_amd64.deb
