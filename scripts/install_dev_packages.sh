@@ -62,3 +62,10 @@ echo "Installing Virtualbox"
 echo "----------------"
 sudo apt install -y virtualbox
 sudo gpasswd -a $USER vboxusers
+
+
+echo "----------------"
+echo "Installing Mitmproxy - Man in the middle proxy"
+echo "----------------"
+wget https://github.com/mitmproxy/mitmproxy/releases/download/v2.0.2/mitmproxy-2.0.2-linux.tar.gz -O /tmp/mitmproxy-2.0.2-linux.tar.gz
+sudo tar -xzf /tmp/mitmproxy-2.0.2-linux.tar.gz -C /usr/local/bin
