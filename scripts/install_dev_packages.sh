@@ -69,3 +69,21 @@ echo "Installing Mitmproxy - Man in the middle proxy"
 echo "----------------"
 wget https://github.com/mitmproxy/mitmproxy/releases/download/v2.0.2/mitmproxy-2.0.2-linux.tar.gz -O /tmp/mitmproxy-2.0.2-linux.tar.gz
 sudo tar -xzf /tmp/mitmproxy-2.0.2-linux.tar.gz -C /usr/local/bin
+
+echo "----------------"
+echo "Installing Docker compose"
+echo "----------------"
+sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+mkdir -p ~/.zsh/completion
+curl -L https://raw.githubusercontent.com/docker/compose/1.18.0/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
+
+# Export env vars
+touch "$HOME/.zshrc"
+{
+    echo ''
+    echo '################ Projects ################'
+    echo 'fpath=(~/.zsh/completion $fpath)'
+    echo 'autoload -Uz compinit && compinit -i'
+} >> "$HOME/.zshrc"
