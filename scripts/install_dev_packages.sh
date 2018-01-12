@@ -83,7 +83,7 @@ curl -L https://raw.githubusercontent.com/docker/compose/1.18.0/contrib/completi
 touch "$HOME/.zshrc"
 {
     echo ''
-    echo '################ Projects ################'
+    echo '################ Docker Compose ################'
     echo 'fpath=(~/.zsh/completion $fpath)'
     echo 'autoload -Uz compinit && compinit -i'
 } >> "$HOME/.zshrc"
