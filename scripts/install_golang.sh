@@ -41,4 +41,5 @@ sudo chmod -R 777 /usr/local/go
 echo "-------------------------------------"
 echo "Installing Golang development dependencies"
 echo "-------------------------------------"
-go get github.com/kardianos/govendor
+go get -u github.com/golang/dep/cmd/dep
+
