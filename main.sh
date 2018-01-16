@@ -12,3 +12,4 @@
 /bin/bash scripts/configure_oh_my_zsh.sh
 /bin/bash scripts/configure_vscode.sh
 /bin/bash scripts/configure_vim.sh
+/bin/bash scripts/configure_tmux.sh
