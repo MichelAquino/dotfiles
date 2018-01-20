@@ -13,3 +13,4 @@
 /bin/bash scripts/configure_vscode.sh
 /bin/bash scripts/configure_vim.sh
 /bin/bash scripts/configure_tmux.sh
+/bin/bash scripts/configure_alias.sh
