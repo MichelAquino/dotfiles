@@ -65,6 +65,10 @@ echo "----------------"
 sudo apt install -y virtualbox
 sudo gpasswd -a $USER vboxusers
 
+echo "----------------"
+echo "Installing NPM"
+echo "----------------"
+sudo apt-get install npm
 
 echo "----------------"
 echo "Installing Mitmproxy - Man in the middle proxy"
