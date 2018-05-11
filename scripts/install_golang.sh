@@ -3,7 +3,7 @@ echo "-------------------------------------"
 echo "Installing Golang"
 echo "-------------------------------------"
 
-VERSION="1.9.2"
+VERSION="1.10.2"
 GOLANG_FILE="go$VERSION.linux-amd64.tar.gz"
 
 if [ -d "$HOME/go" ]; then

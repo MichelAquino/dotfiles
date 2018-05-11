@@ -17,21 +17,18 @@ go get -u github.com/rakyll/hey
 echo "----------------"
 echo "Installing VS Code"
 echo "----------------"
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
-sudo apt-get update
-sudo apt-get -y install code
+sudo dnf check-update
+sudo dnf -y install code
 
 echo "----------------"
 echo "Installing Sublime"
 echo "----------------"
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-
-sudo apt-get update
-sudo apt-get -y install sublime-text
+sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
+sudo dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
+sudo dnf install -y sublime-text
 
 echo "-------------------------------------"
 echo "Installing oh-my-zsh"
@@ -49,26 +46,33 @@ sudo ln -s /opt/Postman/Postman /usr/bin/postman
 echo "----------------"
 echo "jq"
 echo "----------------"
-sudo apt-get -y install jq
+sudo dnf -y install jq
 
 echo "----------------"
 echo "Installing Docker"
 echo "----------------"
-sudo apt-get update
-sudo apt-get -y install docker-ce
+sudo dnf -y install dnf-plugins-core
+sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install -y docker
 
+sudo systemctl start docker
+sudo systemctl enable docker
+
+sudo groupadd docker
 sudo usermod -aG docker ${USER}
 
-echo "----------------"
-echo "Installing Virtualbox"
-echo "----------------"
-sudo apt install -y virtualbox
-sudo gpasswd -a $USER vboxusers
+#sudo systemctl disable docker
+
+#echo "----------------"
+#echo "Installing Virtualbox"
+#echo "----------------"
+#sudo dnf install -y virtualbox
+#sudo gpasswd -a $USER vboxusers
 
 echo "----------------"
 echo "Installing NPM"
 echo "----------------"
-sudo apt-get install npm
+sudo dnf install -y npm
 
 echo "----------------"
 echo "Installing Mitmproxy - Man in the middle proxy"
@@ -79,7 +83,7 @@ sudo tar -xzf /tmp/mitmproxy-2.0.2-linux.tar.gz -C /usr/local/bin
 echo "----------------"
 echo "Installing Docker compose"
 echo "----------------"
-sudo curl -L https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 
 mkdir -p ~/.zsh/completion
