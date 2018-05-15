@@ -9,14 +9,14 @@ sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 echo "----------------"
 echo "Installing Spotify"
 echo "----------------"
-sudo apt-get update
-sudo apt-get install -y spotify-client
+sudo dnf config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo
+sudo dnf install -y spotify
 
 echo "----------------"
 echo "Installing Slack"
 echo "----------------"
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-2.6.3-amd64.deb -O /tmp/slack-desktop-2.6.3-amd64.deb
-sudo dpkg -i /tmp/slack-desktop-2.6.3-amd64.deb
+wget https://downloads.slack-edge.com/linux_releases/slack-3.2.0.beta25a7a50e-0.1.fc21.x86_64.rpm -O /tmp/slack-desktop-3.2.0.rpm
+sudo dnf install -y /tmp/slack-desktop-3.2.0.rpm
 
 echo "----------------"
 echo "Installing Popcorn Time"
@@ -37,23 +37,20 @@ sudo chmod +x /usr/share/applications/popcorntime.desktop
 echo "----------------"
 echo "Installing Deluge"
 echo "----------------"
-sudo apt-get install -y deluge
+sudo dnf install -y deluge
 
 echo "----------------"
 echo "Installing Skype"
 echo "----------------"
-wget https://go.skype.com/skypeforlinux-64.deb -P /tmp
-sudo dpkg -i /tmp/skypeforlinux-64.deb 
+wget https://go.skype.com/skypeforlinux-64.rpm -P /tmp
+sudo dnf install -y /tmp/skypeforlinux-64.rpm
 
 echo "----------------"
 echo "Installing Franz"
 echo "----------------"
-wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.14/franz_5.0.0-beta.14_amd64.deb -O /tmp/franz_5.0.0-beta.14_amd64.deb
-sudo dpkg -i /tmp/franz_5.0.0-beta.14_amd64.deb
-
-echo "----------------"
-echo "Installing Gitter"
-echo "----------------"
-#https://update.gitter.im/linux64/latest
-wget https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb -O /tmp/gitter_3.1.0_amd64.deb
-sudo dpkg -i /tmp/gitter_3.1.0_amd64.deb
+wget https://github.com/meetfranz/franz-app-legacy/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz -O /tmp/franz.tgz
+sudo mkdir /opt/franz
+sudo tar -vzxf franz.tgz -C /opt/franz/
+sudo ln -sf /opt/franz/Franz /usr/bin/franz
+echo -e '[Desktop Entry]\n Version=1.0\n Name=franz\n Exec=/opt/franz/Franz\n Icon=/opt/franz/resources/app.asar.unpacked/assets/franz.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/franz.desktop
+sudo chmod +x /usr/share/applications/franz.desktop
