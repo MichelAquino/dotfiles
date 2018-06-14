@@ -48,9 +48,11 @@ sudo dnf install -y /tmp/skypeforlinux-64.rpm
 echo "----------------"
 echo "Installing Franz"
 echo "----------------"
-wget https://github.com/meetfranz/franz-app-legacy/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz -O /tmp/franz.tgz
+sudo rm -rf /opt/franz
+wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18/franz-5.0.0-beta.18.tar.gz -O /tmp/franz-5.0.0-beta.18.tar.gz
+
 sudo mkdir /opt/franz
-sudo tar -vzxf franz.tgz -C /opt/franz/
-sudo ln -sf /opt/franz/Franz /usr/bin/franz
-echo -e '[Desktop Entry]\n Version=1.0\n Name=franz\n Exec=/opt/franz/Franz\n Icon=/opt/franz/resources/app.asar.unpacked/assets/franz.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/franz.desktop
+sudo tar -vzxf /tmp/franz-5.0.0-beta.18.tar.gz -C /opt/franz/
+sudo ln -sf /opt/franz/franz-5.0.0-beta.18/franz /usr/bin/franz
+echo -e '[Desktop Entry]\n Version=1.0\n Name=franz\n Exec=/opt/franz/franz-5.0.0-beta.18/franz\n Icon=/opt/franz/franz-5.0.0-beta.18/resources/app.asar.unpacked/assets/franz.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/franz.desktop
 sudo chmod +x /usr/share/applications/franz.desktop
