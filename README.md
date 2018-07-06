@@ -1,4 +1,4 @@
-My dotfiles based on Linux Ubuntu
+My dotfiles based on Linux Fedora 
 
 # Include
 
