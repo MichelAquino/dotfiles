@@ -1,6 +1,12 @@
 #!/bin/sh
 
 echo "-------------------------------------"
+echo "Installing CTop"
+echo "-------------------------------------"
+sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.1/ctop-0.7.1-linux-amd64 -O /usr/local/bin/ctop
+sudo chmod +x /usr/local/bin/ctop
+
+echo "-------------------------------------"
 echo "Installing WRK - Load Test Tool"
 echo "-------------------------------------"
 git clone https://github.com/wg/wrk.git /tmp/wrk
