@@ -103,3 +103,8 @@ touch "$HOME/.zshrc"
     echo 'fpath=(~/.zsh/completion $fpath)'
     echo 'autoload -Uz compinit && compinit -i'
 } >> "$HOME/.zshrc"
+
+echo "----------------"
+echo "Installing Elixir"
+echo "----------------"
+sudo dnf install elixir
