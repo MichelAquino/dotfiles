@@ -46,13 +46,7 @@ wget https://go.skype.com/skypeforlinux-64.rpm -P /tmp
 sudo dnf install -y /tmp/skypeforlinux-64.rpm
 
 echo "----------------"
-echo "Installing Franz"
+echo "Installing Rambox"
 echo "----------------"
-sudo rm -rf /opt/franz
-wget https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.18/franz-5.0.0-beta.18.tar.gz -O /tmp/franz-5.0.0-beta.18.tar.gz
-
-sudo mkdir /opt/franz
-sudo tar -vzxf /tmp/franz-5.0.0-beta.18.tar.gz -C /opt/franz/
-sudo ln -sf /opt/franz/franz-5.0.0-beta.18/franz /usr/bin/franz
-echo -e '[Desktop Entry]\n Version=1.0\n Name=franz\n Exec=/opt/franz/franz-5.0.0-beta.18/franz\n Icon=/opt/franz/franz-5.0.0-beta.18/resources/app.asar.unpacked/assets/franz.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/franz.desktop
-sudo chmod +x /usr/share/applications/franz.desktop
+wget https://github.com/saenzramiro/rambox/releases/download/0.5.17/Rambox-0.5.17-x64.rpm -O /tmp/Rambox-0.5.17-x64.rpm
+sudo rpm -i /tmp/Rambox-0.5.17-x64.rpm 
