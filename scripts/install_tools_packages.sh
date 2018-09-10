@@ -6,6 +6,13 @@ echo "-------------------------------------"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp
 sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 
+echo "-------------------------------------"
+echo "Installing Brave"
+echo "-------------------------------------"
+sudo dnf config-manager --add-repo https://s3-us-west-2.amazonaws.com/brave-rpm-release/x86_64/
+sudo rpm --import https://s3-us-west-2.amazonaws.com/brave-rpm-release/keys.asc
+sudo dnf install -y brave
+
 echo "----------------"
 echo "Installing Spotify"
 echo "----------------"
