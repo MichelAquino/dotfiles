@@ -3,3 +3,6 @@ set relativenumber
 
 " Javascript lint
 let g:syntastic_javascript_checkers = ['eslint']
+
+" Cursor line
+set cursorline
