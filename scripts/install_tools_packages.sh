@@ -55,5 +55,9 @@ sudo dnf install -y /tmp/skypeforlinux-64.rpm
 echo "----------------"
 echo "Installing Rambox"
 echo "----------------"
-wget https://github.com/saenzramiro/rambox/releases/download/0.5.17/Rambox-0.5.17-x64.rpm -O /tmp/Rambox-0.5.17-x64.rpm
-sudo rpm -i /tmp/Rambox-0.5.17-x64.rpm 
+wget https://github.com/ramboxapp/community-edition/releases/download/0.6.1/Rambox-0.6.1-linux-x86_64.rpm -O /tmp/Rambox-0.6.1-x64.rpm
+sudo rpm -i /tmp/Rambox-0.6.1-x64.rpm 
+
+
+
+
