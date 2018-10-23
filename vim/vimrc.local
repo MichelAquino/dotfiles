@@ -9,3 +9,4 @@ set cursorline
 
 " Plugins
 Plug 'mileszs/ack.vim'
+Plug 'udalov/kotlin-vim'
