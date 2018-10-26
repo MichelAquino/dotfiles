@@ -9,7 +9,7 @@ sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 echo "-------------------------------------"
 echo "Installing Brave"
 echo "-------------------------------------"
-sudo dnf config-manager --add-repo https://s3-us-west-2.amazonaws.com/brave-rpm-release/x86_64/
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install -y brave-browser
 
