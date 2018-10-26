@@ -10,8 +10,8 @@ echo "-------------------------------------"
 echo "Installing Brave"
 echo "-------------------------------------"
 sudo dnf config-manager --add-repo https://s3-us-west-2.amazonaws.com/brave-rpm-release/x86_64/
-sudo rpm --import https://s3-us-west-2.amazonaws.com/brave-rpm-release/keys.asc
-sudo dnf install -y brave
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo dnf install -y brave-browser
 
 echo "----------------"
 echo "Installing Spotify"
