@@ -56,8 +56,12 @@ echo "----------------"
 echo "Installing Rambox"
 echo "----------------"
 wget https://github.com/ramboxapp/community-edition/releases/download/0.6.1/Rambox-0.6.1-linux-x86_64.rpm -O /tmp/Rambox-0.6.1-x64.rpm
-sudo rpm -i /tmp/Rambox-0.6.1-x64.rpm 
+sudo rpm -i /tmp/Rambox-0.6.1-x64.rpm
 
+echo "----------------"
+echo "Installing Mullvad"
+echo "----------------"
 
-
+wget https://mullvad.net/media/app/MullvadVPN-2018.4_x86_64.rpm -O /tmp/MullvadVPN-2018.4_x86_64.rpm
+sudo rpm -i /tmp/MullvadVPN-2018.4_x86_64.rpm
 
