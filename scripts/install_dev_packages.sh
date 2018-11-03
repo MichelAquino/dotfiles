@@ -59,7 +59,7 @@ echo "Installing Docker"
 echo "----------------"
 sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install -y docker
+sudo dnf install -y docker-ce
 
 sudo systemctl start docker
 sudo systemctl enable docker
