@@ -50,6 +50,18 @@ rm postman.tar.gz
 sudo ln -s /opt/Postman/Postman /usr/bin/postman
 
 echo "----------------"
+echo "Installing Robo3t"
+echo "----------------"
+wget https://download.robomongo.org/1.2.1/linux/robo3t-1.2.1-linux-x86_64-3e50a65.tar.gz -O /tmp/robo3t-1.2.1-linux-x86_64-3e50a65.tar.gz
+sudo tar -xzf /tmp/robo3t-1.2.1-linux-x86_64-3e50a65.tar.gz -C /opt
+rm /tmp/robo3t-1.2.1-linux-x86_64-3e50a65.tar.gz
+sudo ln -s /opt/robo3t-1.2.1-linux-x86_64-3e50a65/bin/robo3t /usr/bin/robo3t
+
+sudo wget https://robomongo.org/static/robomongo-128x128-129df2f1.png -O /opt/robo3t-1.2.1-linux-x86_64-3e50a65/icon.png
+echo -e '[Desktop Entry]\n Version=1.0\n Name=Robo3T\n Exec=/opt/robo3t-1.2.1-linux-x86_64-3e50a65/bin/robo3t\n Icon=/opt/robo3t-1.2.1-linux-x86_64-3e50a65/icon.png\n Type=Application\n Categories=Development' | sudo tee /usr/share/applications/robo3t.desktop
+sudo chmod +x /usr/share/applications/robo3t.desktop
+
+echo "----------------"
 echo "jq"
 echo "----------------"
 sudo dnf -y install jq
