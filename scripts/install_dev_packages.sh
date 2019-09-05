@@ -120,3 +120,5 @@ echo "----------------"
 echo "Installing Elixir"
 echo "----------------"
 sudo dnf install elixir
+
+# https://github.com/zricethezav/gitleaks

@@ -17,6 +17,7 @@ touch "$HOME/.tmux.conf"
     echo ""
     echo "# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)"
     echo "run '~/.tmux/plugins/tpm/tpm'"
+    echo "set-option -g mouse on"
 } >> "$HOME/.tmux.conf"
 
 tmux source ~/.tmux.conf

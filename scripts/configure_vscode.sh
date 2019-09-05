@@ -21,4 +21,3 @@ go get -u -v github.com/tpng/gopkgs
 go get -u -v github.com/newhook/go-symbols
 go get -u -v golang.org/x/tools/cmd/guru
 go get -u -v golang.org/x/tools/cmd/goimports
-go get -u -v github.com/derekparker/delve/cmd/dlv
