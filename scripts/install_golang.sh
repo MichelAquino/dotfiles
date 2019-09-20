@@ -30,6 +30,7 @@ touch "$HOME/.zshrc"
     echo 'export GOPATH=$HOME/go/'
     echo 'export GOBIN=/usr/local/go/bin'
     echo 'export PATH=$PATH:$GOBIN'
+    echo 'export GOPROXY=direct'
 } >> "$HOME/.zshrc"
 
 mkdir -p $HOME/go/{src,pkg,bin}
