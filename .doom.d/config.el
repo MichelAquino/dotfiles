@@ -16,3 +16,15 @@
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type 'relative)
+
+;; Load the recommended configuration
+(use-package evil-multiedit
+ :defer 0
+ :config
+ (evil-multiedit-default-keybinds))
+
+;; Load the recommended configuration
+(use-package undo-tree
+ :defer 0
+ :config
+ (global-undo-tree-mode))
