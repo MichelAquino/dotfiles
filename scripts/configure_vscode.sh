@@ -21,3 +21,8 @@ go get -u -v github.com/tpng/gopkgs
 go get -u -v github.com/newhook/go-symbols
 go get -u -v golang.org/x/tools/cmd/guru
 go get -u -v golang.org/x/tools/cmd/goimports
+go get -u github.com/motemen/gore/cmd/gore
+go get -u github.com/stamblerre/gocode
+go get -u github.com/cweill/gotests/...
+go get -u github.com/fatih/gomodifytags
+GO111MODULE=on go get golang.org/x/tools/gopls@latest
