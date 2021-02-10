@@ -9,6 +9,8 @@ cp vscode/settings.json $HOME/.config/Code/User
 echo "----------------"
 echo "VS Code to Golang tools"
 echo "----------------"
+export GO111MODULE=on
+
 go get -u -v golang.org/x/tools/cmd/godoc
 go get -u -v github.com/derekparker/delve/cmd/dlv
 go get -u -v github.com/nsf/gocode
@@ -25,4 +27,5 @@ go get -u github.com/motemen/gore/cmd/gore
 go get -u github.com/stamblerre/gocode
 go get -u github.com/cweill/gotests/...
 go get -u github.com/fatih/gomodifytags
-GO111MODULE=on go get golang.org/x/tools/gopls@latest
+go get golang.org/x/tools/gopls@latest
+go get github.com/golangci/golangci-lint/cmd/golangci-lint@latest

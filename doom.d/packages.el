@@ -6,4 +6,8 @@
 ;; use 'M-x doom/reload'.
 
 (package! evil-multiedit)
+(package! evil-commentary)
+(package! projectile)
+(package! treemacs-evil)
+(package! treemacs-projectile)
 (package! undo-tree)
