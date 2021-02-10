@@ -25,3 +25,5 @@
  (evil-multiedit-default-keybinds))
 
 (use-package undo-tree)
+
+(add-hook 'prog-mode-hook 'format-all-mode)
