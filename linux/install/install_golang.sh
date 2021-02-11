@@ -3,7 +3,7 @@ echo "-------------------------------------"
 echo "Installing Golang"
 echo "-------------------------------------"
 
-VERSION="1.10.2"
+VERSION="1.15.8"
 GOLANG_FILE="go$VERSION.linux-amd64.tar.gz"
 
 if [ -d "$HOME/go" ]; then
@@ -12,7 +12,7 @@ if [ -d "$HOME/go" ]; then
 fi
 
 echo "Downloading $GOLANG_FILE ..."
-wget https://storage.googleapis.com/golang/$GOLANG_FILE -O /tmp/go.tar.gz
+wget https://golang.org/dl/$GOLANG_FILE -O /tmp/go.tar.gz
 if [ $? -ne 0 ]; then
     echo "Download failed! Exiting."
     exit 1
@@ -38,9 +38,3 @@ rm -f /tmp/go.tar.gz
 
 source $HOME/.zshrc
 sudo chmod -R 777 /usr/local/go
-
-echo "-------------------------------------"
-echo "Installing Golang development dependencies"
-echo "-------------------------------------"
-go get -u github.com/golang/dep/cmd/dep
-

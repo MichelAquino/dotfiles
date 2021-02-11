@@ -23,9 +23,9 @@ go get -u -v github.com/tpng/gopkgs
 go get -u -v github.com/newhook/go-symbols
 go get -u -v golang.org/x/tools/cmd/guru
 go get -u -v golang.org/x/tools/cmd/goimports
-go get -u github.com/motemen/gore/cmd/gore
-go get -u github.com/stamblerre/gocode
-go get -u github.com/cweill/gotests/...
-go get -u github.com/fatih/gomodifytags
-go get golang.org/x/tools/gopls@latest
-go get github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+go get -u -v github.com/motemen/gore/cmd/gore
+go get -u -v github.com/stamblerre/gocode
+go get -u -v github.com/cweill/gotests/...
+go get -u -v github.com/fatih/gomodifytags
+go get -u -v golang.org/x/tools/gopls@latest
+go get -u -v github.com/golangci/golangci-lint/cmd/golangci-lint@latest
