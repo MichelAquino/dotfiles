@@ -24,7 +24,7 @@ echo "----------------"
 echo "Installing VS Code"
 echo "----------------"
 sudo apt update
-sudo apt -y install code
+sudo apt -y install code codium
 
 echo "-------------------------------------"
 echo "Installing oh-my-zsh"
