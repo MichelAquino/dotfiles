@@ -3,6 +3,7 @@
 /bin/bash linux/install/install_base_packages.sh
 /bin/bash linux/install/add_repositories.sh
 /bin/bash linux/install/install_golang.sh
+/bin/bash linux/install_go_dependencies.sh
 /bin/bash linux/install/install_dev_packages.sh
 /bin/bash linux/install/install_tools_packages.sh
 

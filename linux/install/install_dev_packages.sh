@@ -88,4 +88,6 @@ echo "----------------"
 echo "Installing Gitleaks"
 echo "----------------"
 # https://github.com/zricethezav/gitleaks
-go get github.com/zricethezav/gitleaks/v7
+GO111MODULE=on go get github.com/zricethezav/gitleaks/v7
+
+/bin/bash install_emacs.sh

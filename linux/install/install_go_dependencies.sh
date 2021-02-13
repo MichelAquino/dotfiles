@@ -1,12 +1,6 @@
 #!/bin/sh
 
 echo "----------------"
-echo "Set VS Code user config"
-echo "----------------"
-cp vscode/keybindings.json $HOME/.config/Code/User
-cp vscode/settings.json $HOME/.config/Code/User
-
-echo "----------------"
 echo "VS Code to Golang tools"
 echo "----------------"
 export GO111MODULE=on

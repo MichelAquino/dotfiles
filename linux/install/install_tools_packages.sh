@@ -45,3 +45,8 @@ echo "----------------"
 wget https://github.com/ramboxapp/community-edition/releases/download/0.7.7/Rambox-0.7.7-linux-amd64.deb -O /tmp/rambox.deb
 sudo apt install -y /tmp/rambox.deb
 
+echo "----------------"
+echo "Installing Veracrypt"
+echo "----------------"
+wget https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Debian-10-amd64.deb -O /tmp/veracrypt.deb
+sudo apt install -y /tmp/veracrypt.deb

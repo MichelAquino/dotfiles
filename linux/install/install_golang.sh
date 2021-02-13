@@ -18,11 +18,8 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-mkdir "$HOME/go"
-
 echo "Extracting ..."
 sudo tar -C /usr/local -xzf /tmp/go.tar.gz
-mv "$HOME/go"
 touch "$HOME/.zshrc"
 {
     echo ''
@@ -33,7 +30,6 @@ touch "$HOME/.zshrc"
     echo 'export GOPROXY=direct'
 } >> "$HOME/.zshrc"
 
-mkdir -p $HOME/go/{src,pkg,bin}
 rm -f /tmp/go.tar.gz
 
 source $HOME/.zshrc
