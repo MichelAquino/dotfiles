@@ -22,11 +22,6 @@ echo "----------------"
 sudo apt update
 sudo apt -y install code codium
 
-echo "-------------------------------------"
-echo "Installing oh-my-zsh"
-echo "-------------------------------------"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 echo "----------------"
 echo "Installing Postman"
 echo "----------------"
@@ -61,13 +56,10 @@ mkdir -p ~/.zsh/completion
 curl -L https://raw.githubusercontent.com/docker/compose/1.18.0/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
 
 # Export env vars
-touch "$HOME/.zshrc"
-{
-    echo ''
-    echo '################ Docker Compose ##############˜##'
-    echo 'fpath=(~/.zsh/completion $fpath)'
-    echo 'autoload -Uz compinit && compinit -i'
-} >> "$HOME/.zshrc"
+echo '' >> $HOME/.zshrc
+echo '################ Docker Compose ##############˜##' >> $HOME/.zshrc
+echo 'fpath=(~/.zsh/completion $fpath)' >> $HOME/.zshrc
+echo 'autoload -Uz compinit && compinit -i' >> $HOME/.zshrc
 
 echo "----------------"
 echo "Installing Elixir"
