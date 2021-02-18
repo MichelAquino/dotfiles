@@ -32,5 +32,5 @@ touch "$HOME/.zshrc"
 
 rm -f /tmp/go.tar.gz
 
-source $HOME/.zshrc
+# source $HOME/.zshrc
 sudo chmod -R 777 /usr/local/go

@@ -23,3 +23,9 @@ go get -u -v github.com/cweill/gotests/...
 go get -u -v github.com/fatih/gomodifytags
 go get -u -v golang.org/x/tools/gopls@latest
 go get -u -v github.com/golangci/golangci-lint/cmd/golangci-lint@latest
+
+echo "----------------"
+echo "Installing Gitleaks"
+echo "----------------"
+# https://github.com/zricethezav/gitleaks
+go get -u -vgithub.com/zricethezav/gitleaks/v7

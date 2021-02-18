@@ -9,17 +9,13 @@ sudo chmod +x /usr/local/bin/ctop
 echo "-------------------------------------"
 echo "Installing WRK - Load Test Tool"
 echo "-------------------------------------"
-git clone https://github.com/wg/wrk.git /tmp/wrk
-cd /tmp/wrk
+git clone https://github.com/wg/wrk.git ./wrk
+cd ./wrk
 make
 sudo cp wrk /usr/local/bin
+cd ../
+rm -rf ./wrk
 
-echo "-------------------------------------"
-echo "Installing HEY - Load Test Tool"
-echo "-------------------------------------"
-go get -u github.com/rakyll/hey
-
-#erro
 echo "----------------"
 echo "Installing VS Code"
 echo "----------------"
@@ -43,12 +39,6 @@ echo "----------------"
 echo "jq"
 echo "----------------"
 sudo apt -y install jq
-
-echo "----------------"
-echo "Installing Mitmproxy - Man in the middle proxy"
-echo "----------------"
-wget https://github.com/mitmproxy/mitmproxy/releases/download/v2.0.2/mitmproxy-2.0.2-linux.tar.gz -O /tmp/mitmproxy-2.0.2-linux.tar.gz
-sudo tar -xzf /tmp/mitmproxy-2.0.2-linux.tar.gz -C /usr/local/bin
 
 echo "----------------"
 echo "Installing Docker"
@@ -83,11 +73,3 @@ echo "----------------"
 echo "Installing Elixir"
 echo "----------------"
 sudo apt -y install elixir
-
-echo "----------------"
-echo "Installing Gitleaks"
-echo "----------------"
-# https://github.com/zricethezav/gitleaks
-GO111MODULE=on go get github.com/zricethezav/gitleaks/v7
-
-/bin/bash install_emacs.sh

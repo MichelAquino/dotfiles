@@ -16,4 +16,4 @@ touch "$HOME/.zshrc"
 sed -i 's/"robbyrussell"/"risto"/g' ~/.zshrc
 
 # Reload
-source ~/.zshrc
+source $HOME/.zshrc

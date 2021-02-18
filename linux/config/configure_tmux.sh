@@ -19,6 +19,3 @@ touch "$HOME/.tmux.conf"
     echo "run '~/.tmux/plugins/tpm/tpm'"
     echo "set-option -g mouse on"
 } >> "$HOME/.tmux.conf"
-
-tmux source ~/.tmux.conf
-
