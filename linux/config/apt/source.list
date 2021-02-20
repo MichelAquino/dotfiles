@@ -3,21 +3,14 @@
 deb http://deb.debian.org/debian/ buster main non-free contrib
 deb-src http://deb.debian.org/debian/ buster main non-free contrib
 
+deb http://deb.debian.org/debian buster-backports main contrib
+
 deb http://security.debian.org/debian-security buster/updates main contrib non-free
 deb-src http://security.debian.org/debian-security buster/updates main contrib non-free
 
 # buster-updates, previously known as 'volatile'
 deb http://deb.debian.org/debian/ buster-updates main contrib non-free
 deb-src http://deb.debian.org/debian/ buster-updates main contrib non-free
-
-# testing
-deb http://deb.debian.org/debian/ testing main contrib non-free
-
-# unstable
-deb http://deb.debian.org/debian/ unstable main contrib non-free
-
-# experimental
-deb http://deb.debian.org/debian/ experimental main contrib non-free
 
 ## VScode
 deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main

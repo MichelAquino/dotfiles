@@ -1,0 +1,14 @@
+# https://github.com/ashwinvis/xrandr-extend
+# xrandr-extend hdmi
+
+[provider:modesetting]
+primary = eDP-1
+hdmi = HDMI-2
+
+[resolutions]
+primary = 2560, 1600
+hdmi = 1920, 1080
+
+[scaling]
+primary = 1.0
+hdmi = 1.9

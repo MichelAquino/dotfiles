@@ -1,6 +1,11 @@
 #!/bin/sh
 
 echo "----------------"
+echo "Adding Debian 10 backports repository"
+echo "----------------"
+echo 'deb http://deb.debian.org/debian buster-backports main contrib' | sudo tee --append /etc/apt/sources.list.d/buster-backports.list
+
+echo "----------------"
 echo "Adding Spotify repository "
 echo "----------------"
 curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 

@@ -1,1 +1,0 @@
-xrandr --output eDP-1 --primary --mode 2560x1600 --pos 640x2400 --rotate normal --output HDMI-2 --scale 1.8x1.8 --mode 1920x1080 --pos 0x0 --rotate normal --right-of eDP-1

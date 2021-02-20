@@ -10,6 +10,11 @@ echo "Installing Brave"
 echo "-------------------------------------"
 sudo apt install -y brave-browser
 
+echo "-------------------------------------"
+echo "Installing Tor Browser"
+echo "-------------------------------------"
+sudo apt -y install torbrowser-launcher
+
 echo "----------------"
 echo "Installing Spotify"
 echo "----------------"
@@ -50,3 +55,8 @@ echo "Installing Veracrypt"
 echo "----------------"
 wget https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Debian-10-amd64.deb -O /tmp/veracrypt.deb
 sudo apt install -y /tmp/veracrypt.deb
+
+echo "----------------"
+echo "Installing Authy"
+echo "----------------"
+sudo snap install authy --beta

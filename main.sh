@@ -8,6 +8,7 @@
 /bin/bash linux/install_go_packages.sh
 /bin/bash linux/install_tools.sh
 /bin/bash linux/install_emacs.sh
+/bin/bash linux/install_python.sh
 
 /bin/bash linux/configure_ssh_keys.sh
 /bin/bash linux/configure_git.sh
