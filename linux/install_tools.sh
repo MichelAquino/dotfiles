@@ -49,6 +49,8 @@ echo "Installing Rambox"
 echo "----------------"
 wget https://github.com/ramboxapp/community-edition/releases/download/0.7.7/Rambox-0.7.7-linux-amd64.deb -O /tmp/rambox.deb
 sudo apt install -y /tmp/rambox.deb
+sudo chown root:root /opt/Rambox/chrome-sandbox
+sudo chmod 4755 /opt/Rambox/chrome-sandbox 
 
 echo "----------------"
 echo "Installing Veracrypt"
@@ -60,3 +62,12 @@ echo "----------------"
 echo "Installing Authy"
 echo "----------------"
 sudo snap install authy --beta
+
+echo "----------------"
+echo "Installing Signal"
+echo "----------------"
+wget -O- https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
+echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+sudo apt update && sudo apt install signal-desktop
+sudo chown root:root /opt/Signal/chrome-sandbox
+sudo chmod 4755 /opt/Signal/chrome-sandbox
